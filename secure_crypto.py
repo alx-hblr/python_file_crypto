@@ -5,8 +5,6 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
 from cryptography.hazmat.primitives import hashes
 
-password = "DEFAULT_PASSWORD_FOR_SECURITY_TEST"
-
 def derive_key(password, salt):
     """Derive a key from a password and salt using PBKDF2-HMAC-SHA256
 
